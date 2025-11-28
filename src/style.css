@@ -1,5 +1,46 @@
-@import "bootstrap/dist/css/bootstrap.min.css";
+body {
+    background-color: #0d0d0d;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
 
-body{
-    background: white;
+.container {
+    width: 500px;
+    margin: auto;
+    padding: 20px;
+    display: flex;
+    border: 2px solid #ff00ff; 
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(181, 245, 104); 
+    box-shadow: 0 0 20px #ff00ff, 0 0 40px #00ffff; 
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.container:hover {
+    transform: translateY(2px);
+    box-shadow: 0 0 10px #ff00ff, 0 0 20px #00ffff; 
+}
+
+.btn-genera {
+    background: linear-gradient(45deg, #ff00ff, #00ffff); 
+    padding: 10px 20px;
+    color: #0d0d0d;
+    font-weight: bold;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    box-shadow: 0 0 10px #ff00ff, 0 0 20px #00ffff;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.btn-genera:hover {
+    transform: translateY(2px);
+    box-shadow: 0 0 5px #ff00ff, 0 0 10px #00ffff;
+    background: linear-gradient(45deg, #00ffff, #ff00ff); 
 }
